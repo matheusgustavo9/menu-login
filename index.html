@@ -12,35 +12,49 @@
 
         <section class="bem-vindo">
             <h1>Seja Bem-Vindo!</h1>
-            <button>Login</button>
-            <button>Registra-se</button>
+
+            <button class="register-btn" onclick="moveToRegister()">Registre-se > </button>
+            <button class="login-btn" onclick="moveToLogin()"> < Login</button>
+        </section>
+
+        
+
+        <section class="register">
+            <form action="">
+                <legend>Registre-se</legend>
+
+                <label for="">Nome Completo</label>
+                <input type="text" required>
+
+                <label for="">Email</label>
+                <input type="email" required>
+
+                <label for="">Senha</label>
+                <input type="password" required>
+
+                <button class="button-register">Registrar-se</button>
+            </form>
         </section>
 
         <section class="login">
             <form action="">
                 <legend>Login</legend>
-                <label for="">Nome Completo</label>
-                <input type="text">
-                <label for="">Email</label>
-                <input type="email">
+                <label for="">Usuário ou Email</label>
+                <input type="text" required>
+        
                 <label for="">Senha</label>
-                <input type="password">
-                <a href="#">Não tem uma conta? <strong>Registra-se</strong></a>
-            </form>
-        </section>
-
-        <section class="register">
-            <form action="">
-                <legend>Registre-se</legend>
-                <label for="">Nome ou Email</label>
-                <input type="text">
-                <label for="">Senha</label>
-                <input type="password">
+                <input type="password" required>
+        
                 <a href="#">Esqueci a senha</a>
+
+                <button class="button-login">Login</button>
+                
+                <a href="#" class="nohave">Não tem uma conta? <strong>Registre-se</strong></a>
             </form>
         </section>
 
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
